@@ -30,10 +30,33 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+  className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+>
+  {children}
+
+  {/* WhatsApp Floating Button */}
+  <a
+    href="https://wa.me/918423792250"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      position: "fixed",
+      bottom: "20px",
+      right: "20px",
+      backgroundColor: "#25D366",
+      color: "white",
+      padding: "12px 18px",
+      borderRadius: "50px",
+      textDecoration: "none",
+      fontWeight: "bold",
+      boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+      zIndex: 1000,
+    }}
+  >
+    💬 Chat on WhatsApp
+  </a>
+</body>
+
     </html>
   );
 }
